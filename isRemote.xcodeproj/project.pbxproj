@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		9C7EC499265BD9FA00CA168B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7EC497265BD9FA00CA168B /* Main.storyboard */; };
 		9C7EC49B265BD9FB00CA168B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7EC49A265BD9FB00CA168B /* Assets.xcassets */; };
 		9C7EC49E265BD9FB00CA168B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7EC49C265BD9FB00CA168B /* LaunchScreen.storyboard */; };
+		9CBC2800265D48230044C104 /* FoundRemote.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9CBC27FF265D48230044C104 /* FoundRemote.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		9C7EC49A265BD9FB00CA168B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C7EC49D265BD9FB00CA168B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C7EC49F265BD9FB00CA168B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CBC27FF265D48230044C104 /* FoundRemote.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FoundRemote.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		9C7EC490265BD9FA00CA168B /* isRemote */ = {
 			isa = PBXGroup;
 			children = (
+				9CBC27FF265D48230044C104 /* FoundRemote.mlmodel */,
 				9C7EC491265BD9FA00CA168B /* AppDelegate.swift */,
 				9C7EC493265BD9FA00CA168B /* SceneDelegate.swift */,
 				9C7EC495265BD9FA00CA168B /* ViewController.swift */,
@@ -110,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 9C7EC485265BD9FA00CA168B;
+			packageReferences = (
+				9C7EC4A7265BE9CD00CA168B /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = 9C7EC48F265BD9FA00CA168B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +145,7 @@
 			files = (
 				9C7EC496265BD9FA00CA168B /* ViewController.swift in Sources */,
 				9C7EC492265BD9FA00CA168B /* AppDelegate.swift in Sources */,
+				9CBC2800265D48230044C104 /* FoundRemote.mlmodel in Sources */,
 				9C7EC494265BD9FA00CA168B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,13 +294,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AR576GDVF9;
+				DEVELOPMENT_TEAM = TZL2HX863Q;
 				INFOPLIST_FILE = isRemote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maximehip.isRemote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maximehip.isRemote2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,13 +313,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AR576GDVF9;
+				DEVELOPMENT_TEAM = TZL2HX863Q;
 				INFOPLIST_FILE = isRemote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maximehip.isRemote;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maximehip.isRemote2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -341,6 +348,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C7EC4A7265BE9CD00CA168B /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.14;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 9C7EC486265BD9FA00CA168B /* Project object */;
 }
